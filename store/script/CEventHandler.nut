@@ -23,3 +23,9 @@ function invokeEvent(event, ...) {
 		handler.acall(args);
 	}	
 }
+
+bindEvent("onServerData", function(stream)
+{
+	local data = stream.ReadString();
+	// Convert: fromJSON.decode
+});
